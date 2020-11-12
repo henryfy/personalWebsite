@@ -56,6 +56,9 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-
-
-
+function darkMode() {
+    document.documentElement.classList.toggle('darkMode');
+    document.querySelectorAll('.inverted').forEach(result=>{
+        result.classList.toggle('invert')
+    });
+}
